@@ -1,0 +1,32 @@
+{
+  "name": "cypress-cucumber-test-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@cucumber/cucumber": "^8.9.0",
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.1.0",
+    "esbuild": "^0.15.12",
+    "eslint": "^8.27.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.12.1",
+    "prettier": "^2.8.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/step_definitions/**/*.{js,ts}"
+  },
+  "scripts": {
+    "test": "cypress run --e2e --browser chrome --spec **/*.(cy.js,feature}",
+    "pretty": "prettier --write \"./**/*.{yml,js,jsx,json}\"",
+    "cy:open": "cypress open --e2e --browser chrome"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber"
+  ],
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0"
+  }
+}
