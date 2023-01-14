@@ -132,3 +132,4 @@ When('Пользователь нажимает кнопку "Reset"', () => {
 Then('Список транзакций пуст', () => {
     customerPage.checkEmptyListOfTransactions();
 });
+//bla-bla
